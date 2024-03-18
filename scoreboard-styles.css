@@ -1,0 +1,139 @@
+@font-face {
+    font-family: HoltwoodOneSC-Regular;
+    src: url(fonts/HoltwoodOneSC-Regular.ttf);
+}
+@font-face {
+    font-family: Versus;
+    src: url(fonts/Versus-BlackExtended.otf);
+}
+@font-face{
+    font-family: Digital;
+    src: url(fonts/digital/digital-7.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Gemini_Generated_Image.jpg");
+    background-size: cover;
+    background-position:center;
+}
+#app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(255, 255, 255);
+    border-width:4px;
+    border-style: solid;
+    border-radius:15px;
+    padding:20px;
+    background-color: rgb(30, 36, 102);
+}
+.input-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+h3{
+    padding-left:30px;
+    padding-right:30px;
+    font-family:Digital;
+    font-size:40px;
+    color:white;
+}
+h2{
+    font-size:6em;
+    font-family:helvetica;
+}
+h1{
+    padding:40px;
+    font-family: "HoltwoodOneSC-Regular";
+    font-style: normal;
+    font-size:5em;    
+    color: white; 
+}
+.incrementers{
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    border-style:none;
+    cursor:pointer;
+    background-color: rgb(214, 35, 3);
+    color:white;
+    font-family: helvetica;
+    font-weight:bold;
+    transition:background-color 0.25s;
+}
+.incrementers:hover{
+    background-color:rgb(235, 71, 71);
+}
+.incrementers-reset{
+    width:60px;
+    height:30px;
+}
+.score{
+    width:140px;
+    height:140px;
+    padding:20px;
+    border-style:dashed;
+    border-width:2px;
+    border-radius:10px;
+    border-color:white;
+    font-family: Digital;
+    background-color:rgb(21, 21, 21);
+    color:orange;
+    display:flex;
+    justify-content: center;
+}
+#versus{
+    font-family: Digital;
+    font-size:60px;
+}
+.buttonbox{
+    padding-top:20px;
+}
+input{
+    width:150px;
+    font-family:verdana;
+    padding:3px;
+    border-radius:4px;
+    transition: 0.2s ease;
+    z-index:1111;
+    border:none;
+    }
+input:hover{
+    background-color: rgb(211, 222, 248);
+}
+.submit{
+    font-family:verdana;
+    font-weight:bold;
+    padding:3px;
+    border-radius:6px;
+    width:40px;
+    border-style:none;
+    cursor:pointer;
+    background-color: rgb(214, 35, 3);
+    color:white;
+    font-family: helvetica;
+    transition:background-color 0.25s;
+}
+.incrementers-reset{
+    font-family:verdana;
+    font-weight:bold;
+    padding:3px;
+    border-radius:6px;
+    width:60px;
+    border-style:none;
+    cursor:pointer;
+    background-color: rgb(214, 35, 3);
+    color:white;
+    font-family: helvetica;
+    transition:background-color 0.25s; 
+}

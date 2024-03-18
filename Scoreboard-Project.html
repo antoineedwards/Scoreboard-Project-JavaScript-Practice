@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scoreboard-styles.css">
+</head>
+
+<body>
+    <h1 class="holtwood-one-sc-regular">SCOREBOARD</h1>
+    <div id="app-container">
+
+        <div class="input-container">
+            <div>
+                <input class="typeboxes" id="typebox1" placeholder="Enter Team Name" type="text">
+                <button class="submit" id="submitButton1">Enter</button>
+            </div>
+            <br>
+            <h3 id="teamName1">Team 1</h3>
+                <br>
+                <div class="score-container">
+                 <h2 class="score" id="scorelabel1">0</h2>
+                </div>
+                <div class="buttonbox">
+                    <button class="incrementers" id="leftplus1">1</button>
+                    <button class="incrementers" id="leftplus2">2</button>
+                    <button class="incrementers" id="leftplus3">3</button>
+                    <button class="incrementers" id="leftminus1">-1</button>
+                </div>
+                <br>
+                <button class="incrementers-reset" id="leftreset">Reset</button>
+        </div>
+        <h3 id="versus">VS</h3>
+        <div class="input-container">
+            <div>
+                <input class="typeboxes" id="typebox2" placeholder="Enter Team Name" type="text">
+                <button class="submit" id="submitButton2">Enter</button>
+            </div>
+            <br>
+            <h3 id="teamName2">Team 2</h3>
+                <br>
+                <h2 class="score" id="scorelabel2">0</h2>
+                <div class="buttonbox">
+                    <button class="incrementers" id="rightplus1">1</button>
+                    <button class="incrementers" id="rightplus2">2</button>
+                    <button class="incrementers" id="rightplus3">3</button>
+                    <button class="incrementers" id="rightminus1">-1</button>
+                </div>
+                <br>
+                <button class="incrementers-reset" id="rightreset">Reset</button>
+
+        </div>
+    </div>
+    <script src="scoreboard-script.js"></script>
+</body>
+
+</html>
